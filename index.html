@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>my first js structure</title>
+  </head>
+  <body>
+    <h2>structuring javascript</h2>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- App -->
+    <script type="test/javascript" src="ajaxService.js"></script>
+    <script type="text/javascript" src="dataService.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log(app.title);
+        // app.displayTitle();
+
+        // get users data and write it to console
+        app.getUsers();
+
+        // create new user : post example
+        let newUser = {
+          name: "Dexter Morgen",
+          job: "crime lab analyst"
+        };
+      });
+    </script>
+  </body>
+</html>
